@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Listas</title>
+</head>
+<body>
+	<!--Listas ordenadas-->
+
+	<!--Pueden tener dos atributos: type, donde yo le indico que tipo de enumeracion yo quiero utilizar(1,A,I,a,i); start lo que me ayuda a hacer, es que la lista no necesariamente tiene que empezar por el primer elemento ejemplo: start="8" empieza por el octavo elemento del abecedario si uso ejemplo un type="A".-->
+
+	<ol type="I">
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ol>
+
+	<!--Listas no ordenadas o con viñetas-->
+	<!--Tienen atributo type tambien, y puedo utilizar tres tipos de viñeta, la opcion por defecto es disc, pero, puedo tener tambien circle, o square.-->
+
+	<!--Con CSS yo puedo cambiar esa viñeta, la puedo personalizar-->
+
+	<ul type="disc">
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ul>
+
+	<!--A su vez, estas listas pueden estar anidadas.-->
+
+	<ol>
+		<li>Elemento</li>
+		<li>Elemento</li>
+			<ul type="disc">
+				<li>Elemento</li>
+				<li>Elemento</li>
+				<li>Elemento</li>
+				<li>Elemento</li>
+			</ul>
+		<li>Elemento</li>
+		<li>Elemento</li>
+	</ol>
+
+	<!--Lista de definicion: funcionan como glosario, para mostrar un glosario o diccionario, donde puedo ir agregando terminos e ir definiendolos-->
+	<!--Elementos DL, DT, DD-->
+	<dl> <!--Definition list-->
+		<dt>Photoshop</dt> <!--Término-->
+		<dd>software para edición profesional de imagenes propiedad de Adobe</dd> <!--Definición del término-->
+		<dt>GIMP</dt><!--Definition term-->
+		<dd>software para edición profesional de imagenes con licencia GNU</dd><!--Definition data-->
+		<dt>Illustrator</dt>
+		<dd>software para ilustración profesional propiedad de Adobe</dd>
+	</dl>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+	
+	<!--Se van a utilizar dos atributos obligatorios: action y method. action es el lugar donde se van a procesar los datos que se capturan dentro del formulario, los mas usuales es usar un script de algun tipo, php, cml, etc. para que procese esos datos-->
+	
+	<!--form action="ejemplo.php" method="get"></form--> <!--Caso en el cual el script de php este en la misma carpeta donde estan los archivos de html o sino...-->
+
+	<!--form action="http://www.algo.com/ejemplo.php" method="post"></form-->	<!--Podria decirle que que se dirija hacia un sitio donde se encuentra ese script-->
+
+
+	<!--Conclusion, en el action yo voy a escribir que yo necesito para procesar los datos del formulario-->
+
+	<!--El method es la manera en la que se van a enviar esos datos, los dos valores posibles son get o post. -->
+
+	<!--El metodo get se utiliza cuando la informacion a enviar no es muy grande, cuando el formulario es corto, cuando la info que va a viajar, va a viajar de manera publica por la barra de direccion del navegador. El metodo get solo puede enviar hasta 8192 bytes, pero dependiendo del servidor web que este configurado.-->
+
+	<!--El metodo post, se utiliza cuando se adjuntan archivos o cuando la cantidad de info supera lo que supera lo que soporta el metodo get, los datos se envian ocultos por las cabeceras http, util para informacion que va o que viene de una base de datos-->
+
+	<form action="ejemplo.php" method="post">
+
+		<!--size el ancho del campo medido en caracteres, maxlenght cuantos caracteres maximo va a poder escribir en ese campo-->
+
+		Nombre: <input type="text" name="usuario" size="15" maxlength="30"> <br>
+		Password: <input type="password" name="password" size="15" maxlength="10"> <br>
+		Comentarios: <br>
+
+		<!--El ancho en textarea lo voy a medir en columnas, el alto tambien lo defino en rows, filas. Necesita etiquetas de cierre, es un elemento no vacio, pero entre la apertura y cierre no agrego nada-->
+
+		<textarea name="Comentarios" cols="20" rows="4"></textarea>
+
+		<hr>
+		<!--Checkbox y radio button-->
+
+		<!--Elementos para multiple selección:-->
+		Servicio de música: <br>
+		<input type="Checkbox" name="servicio" value="itunes" checked="checked"> iTunes <br>
+		<input type="Checkbox" name="servicio" value="lastfm" checked> Last.fm <br>
+		<input type="Checkbox" name="servicio" value="spotify"> Spotify <br>
+		<!--En este caso puedo seleccionar todos los que quiera.-->
+
+		<!--Tambien hay un atributo adicional dentro de los atibutos checkbox, checked: elemento que me ayuda a ese campo de checkbox ya venga seleccionado sin que el usuario lo haya tocado, puede ser checked solo o con el valor, preferente sin el-->
+
+		<hr>
+		<!--Elemento de unica selección, y serviria para cuando se le preguntara el genero o pedirle que responda por algo que solo tiene una seleccion.-->
+
+		Seleccione su género:<br>
+		<input type="radio" name="genero" value="masculino" checked> Masculino <br>
+		<input type="radio" name="genero" value="femenino"> Femenino <br>
+		<!--La clave aca es el nombre, si tienen el mismo nombre nunca se van a poder seleccionar los dos al mismo tiempo, si tuvieran distinto nombre si. Acá lo que se puede usar es el checked.-->
+
+	</form>
+
+	<hr>
+
+	<!--elementos de menú de selección y lista de seleccion-->
+
+	Seleccione el dispositivo que utiliza para escuchar musica:
+
+	<!--SELECT menu de selecciones, menu desplegable-->
+	<select name="dispositivo">
+
+		<option value="ipod">iPod</option>
+		<option value="radio">Radio</option>
+		<option value="computadora">Computadora</option>
+		<!--tienen un value: el dato que viajaria si yo seleccionara esa opcion-->
+
+	</select>
+
+	<!--Tambien podria hacerlo de otra manera-->
+
+	<select name="dispositivo">
+
+		<option value="">Dispositivo para escuchar musica?</option>
+		<option value="ipod" selected>iPod</option>
+		<option value="radio">Radio</option>
+		<option value="computadora">Computadora</option>
+		<!--En este caso la primera opcion podria quedar seleccionada y si nos damos cuenta queda el primer value que no tiene nada dentro, con por ejemplo, javascript esto podemos validarlo para que no sea asi, o utilizar directamente la primera opción-->
+
+		<!--Ademas con el atributo select yo puedo seleccionar cual quiero que sea el que se vea primero-->
+
+	</select>
+
+	<hr>
+
+	<!--Lista de seleccion, es exactamente igual a un menú de seleccion-->
+
+	<!--Como tiene cuatro valores puedo darle tamaño de altura de cuatro. Tambien tiene una utilidad de multiple: la persona puede seleccionar mas de una opción-->
+
+	<select name="dispositivo" size="4" multiple>
+
+		<option value="">Dispositivo para escuchar musica?</option>
+		<option value="ipod" selected>iPod</option>
+		<option value="radio">Radio</option>
+		<option value="computadora">Computadora</option>
+
+	</select>
+	
+	<hr>
+
+	<label for="edad">Edad:</label>
+	<input type="text" name="edad">
+	<!--Label, puede ir despues de cualquiera de los elementos del formulario. Tambien te ayuda con los discapacitados visuales a que puedan saber que es lo que van a llenar en ese elemento del formulario.-->
+
+
+	<fieldset>
+		
+		<legend>Información de contacto</legend>
+		<label for="email">Email:</label>
+		<input type="text" name="email"><br>
+		<label for="celular">Celular:</label>
+		<input type="text" name="celular"><br>
+		<label for="telefono">Teléfono:</label>
+		<input type="text" name="telefono"><br>
+
+	</fieldset>
+	
+	<!--Fieldset:elemento visual, Me va a indicar o me va a mostrar un cuadro que va a rodear esos elementos, para que sepamos que estan todos dentro de un mismo set, este cuadro se puede manipular luego con CSS.-->
+
+	<!--Tambien le puedo agregar otra etiqueta que se llama legend, un texto que voy a ver dentro del fieldset-->
+
+	<input type="submit" name="inscripcion" value="Inscripción">
+
+	<!--Cuando yo le de click el va a mirar en que lugar se va enviar.-->
+
+</body>
+</html>

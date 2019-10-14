@@ -1,0 +1,45 @@
+<!--son elementos que nos permiten hacer la navegacion entre los documentos de un sitio o de los documentos de un sitio a otro, de manera remota o dentro del mismo documento.
+los links estan clasificados de acuerdo a su funcion.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Links o vínculos</title>
+</head>
+<body>
+
+	<p id="hola">Hola a todos!</p>
+	<!--es el identificador único de ese elemento y le estoy dando el nombre hola, lo vamos a usar mas cuando usemos css.-->
+
+	<!--Links-->
+	<!--Estan definidos de acuerdo a su función-->
+	<!--Link remoto: nos lleva de un sitio de donde me encuentre a otro lugar cualquiera en la web, debe llevar obligatoriamente un atributo: href, que indica el lugar hacia donde voy a ir-->
+
+	<a href="http://www.google.com" target="_blank">Link remoto</a>
+	
+	<!--hay otro atributo que puedo usar en cualquier link que se llama target, me indica de acuerdo lo que quiero hacer como abrir ese link, es decir, si lo abro en la misma ventana o en una ventana o pestaña nueva (_blank). -->
+
+	<hr>
+
+	<!--Link local: este link me va a llevar a un documento que esta dentro del mismo sitio en el que me encuentro.-->
+
+	<a href="atributos.html" target="_blank" title="Texto o comentario que se ve como un tooltip debajo del cursor">Link local</a>
+
+	<!--Si bien estos dos links los escribi uno debajo de otro, en la pagina web van a aparecer uno al lado de otro, porque esta etiqueta tiene la particularidad de ser una etiqueta de linea, que aparece a nivel de texto. para separarlos puedo usar hr, elemento de cierre no necesita etiqueta de cierre-->
+
+	<hr>
+
+	<!--Link de correo: son los que nos permite crear vinculos para que la persona al dar click nos pueda enviar un correo directamente. Dependiendo del sistema operativo de la plataforma en la que estemos navegando pueden ocurrir cosas diferentes. Aqui el target no es tan importante, por la forma en la que se comporta no es necesario que lo agreguemos.-->
+
+	<a href="mailto:masaqi@algo.com">Link de Correo</a>
+
+	<hr>
+
+	<!--Link anclado: nos permite hacer vinculos dentro del mismo documento, me permite desplazarme dentro del mismo documento. para que funcion o se vea el efecto tiene que haber una barra de desplazamiento.-->
+
+	<a href="#hola">Link Anclado</a>
+
+	<!--Hay otros tipos de atributos para los links como el title que cuando apoyas el cursor sobre el link, te aparece un texto personalizado.-->
+
+</body>
+</html>

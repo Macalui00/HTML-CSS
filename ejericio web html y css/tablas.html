@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+</head>
+<body>
+
+	<!--Atributos para modificar la tabla el border indica el bordeado con la cantidad de pixeles de grosor que quiera, ejemplo border="1" borde de un pixel de grueso. otro tipo de atributo dentro de las propiedades de la tabla width = "300", sin embargo tambien podria manejarse con CSS. Cellspacing es el espacio que va entre cada una de las celdas. cellpadding, definir el margen interno que maneja cada uno de los elementos de la tabla.-->
+
+
+	<table border="1" width="300" cellspacing="4" cellpadding="5">
+		<!--Otras etiquetas que pertenecen al elemento table. Caption debe ir inmediatamente despues de la apertura de la tabla, antes de las filas, me indica o le proporciona un titulo a esa tabla. Otras etiquetas que hacen parte, opcionalmente tambien de las tablas. Yo puedo definir cual va a ser la cabecera de la tabla, porque tienen los elementos del encabezado, cuales el cuerpo y cual el pie de la tabla.-->
+		<caption>Tabla de posiciones</caption>
+		<thead>
+			<tr>
+			<th>equipo</th> <!--Elemento alineado y en negrita-->
+			<th>puntos</th>
+		</tr>
+		</thead>
+		
+		<tbody>
+		<tr>
+			<td>amarillo</td>
+			<td rowspan="2">16</td><!--Rowspan me va a decir cuantas filas quiero expandir, combinar filas-->
+		</tr>
+		<tr>
+			<td>rojo</td>
+			<!--td>12</td--> <!--Por lo que este elemento de aca no nos serviria, lo comentamos para no tener que borrarlo--> <!--Por lo que dos celdas compartirian la misma informacion, basicamente para eso serviria, en este caso dos equipos tendrian el mismo puntaje-->
+		</tr>
+		</tbody>
+		
+		<tfoot>
+		<tr>
+			<td colspan="2">posiciones luego de 6 partidos</td> <!--Colspan combinar columnas, cuantas columnas quiero expandir un elemento de la tabla, un registro de la tabla-->
+			<!--td>&nbsp;</td--> <!--Caracter especia que indica espacio en blanco.-->
+		</tr>
+		</tfoot>
+		
+	</table>
+</body>
+</html>

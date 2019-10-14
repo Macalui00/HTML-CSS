@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>iframes</title>
+</head>
+<body>
+	<!--Son los elementos utilizados para mostrar en una ventana informacion de otra pagina web o documento html, no es muy comun actualmente. Me muestra un archivo o documento externo al cual me encuentro.-->
+
+	<!--iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26146.827979691494!2d-61.05246416099854!3d-34.997855192973695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bf4b5ab5a57bf9%3A0xc40f1b55383e8e6d!2sLos+Toldos%2C+Buenos+Aires!5e0!3m2!1ses!2sar!4v1557864365791!5m2!1ses!2sar" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe-->
+
+	<!--creamos nuestro propio iframe, obligatorio, tamaño y ancho. no quiero que tenga scroll ni borde.-->
+
+	<iframe src="estructura.html" width="200" height="300" name="cuadro" scrolling="no" frameborder="0"></iframe>
+
+	<!--Con el target lo que estoy haciendo es que yo le estoy indicando que cuando me abra ese link, se abra en esa ventana del iframe. Uso el hr para diferenciar los documentos sino me quedan los dos uno, al lado del otro.-->
+
+	<hr>
+
+	<a href="listas.html" target="cuadro">Ir a documentos de cita</a>
+
+</body>
+</html>
