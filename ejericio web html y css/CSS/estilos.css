@@ -48,3 +48,17 @@ el selector universal consiste de un asterisco seguido de una declaracion.
 */
 
 
+/*Los SELECTORES DE TIPO O DE ETIQUETA modifican a los elementos de html de manera cocreta*/
+/*Aquí ya teniamos dos ejemplos donde uno modifica a los elementos h2 y en el otro a los elementos p
+
+Agregamos al documento Estilo_importadas.html unos elementos del tipo Span.
+Puedo definir el elemento al cual le quiero aplicar esas caracteristicas*/
+
+span {color: darkgreen;}
+
+/*los SELECTORES DE TIPO CLASS son selectores de tipo personalizados, en los cuales cada uno le define el nombre del selector, 
+pero este nombre no puede tener espacios o caracteres raros y comienzan con un punto.*/
+
+.subrayado{text-decoration: underline;}
+
+/*Si yo ejecuto el archivo Estilo_importadas.html no va a pasar anda porque yo todavia no especifique en donde se va a aplicar.*/
