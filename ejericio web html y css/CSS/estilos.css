@@ -121,8 +121,24 @@ img[alt="gato tierno"]{width: 200px;height: auto;} /*Solamente se va a ver afect
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-/*lo que va a hacer este font family es que me va a mostrar la informacion del body en arial pero, le pongo coma y
- otra fuente porque en caso de que no encuentre ese tipo de letra, que me lo muestre en ese otro tipo de letra y
- si tampoco la encuentra, que me lo muestre en el otro tipo*/
+    /*lo que va a hacer este font family es que me va a mostrar la informacion del body en arial pero, le pongo coma y
+    otra fuente porque en caso de que no encuentre ese tipo de letra, que me lo muestre en ese otro tipo de letra y
+    si tampoco la encuentra, que me lo muestre en el otro tipo*/
+    font-size: 14px; /*otra propiedad que me permite cambiar o definir la unidad de medida que quiero para la fuente, puedo especificar la fuente en pixeles, en porcentajes, en puntos, etc.
+    Pero se recomiendan tres unidades de medida que son:
+        pixeles: unidades de medida que tenemos en pantalla.
+        porcentajes: equivalente a 16 pixeles.
+        em = pixeles/16. me permite trabajar en valores decimales.
 
+        en esta tabla podemos ver cuales son los valores equivalentes:
+        body por defecto mide 16 px, 100% y 1em, ejemplo.
+
+    */
+    font-weight: bold;/*font-weight: me determina el grosor de la fuente. puedo tener un valor NORMAL, o un valor BOLD. Pero tambien puedo tener valores intermedios siempre y cuando te lo
+    permita, la familia completa de la fuente te lo permita. Si yo especifico ahi, 0, eso seria normal, si yo especifico ahi, 1000, eso seria BOLD. Si yo quiero un MEDIUM, yo puedo poner 500
+    sin necesidad de especificar la unidad de medida.*/
+    /**/
+    /**/
+    /**/
+    /**/
 }
