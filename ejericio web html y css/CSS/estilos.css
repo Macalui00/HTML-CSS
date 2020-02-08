@@ -114,4 +114,4 @@ a todas las imagenes cuyo atributo sea el title van a tener ciertas caracteristi
 img[title]{width: 200px;height: auto;}
 /*esto lo aplica a todas las imagenes, pero si a una le quito el titulo, a esa que le quite el titulo, no se le aplican esas propiedades.*/
 
-img[alt="gato tierno"]{width: 200px;height: auto;} /*Solamente se va a ver afectado el elemento html que presente ese atributo con ese valor.*/
+img[alt="gato tierno"]{width: 200px;height: auto;} /*Solamente se va a ver afectado el elemento html o elementos que presenten ese atributo con ese valor.*/
