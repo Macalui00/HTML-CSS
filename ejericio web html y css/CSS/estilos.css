@@ -61,4 +61,42 @@ pero este nombre no puede tener espacios o caracteres raros y comienzan con un p
 
 .subrayado{text-decoration: underline;}
 
-/*Si yo ejecuto el archivo Estilo_importadas.html no va a pasar anda porque yo todavia no especifique en donde se va a aplicar.*/
+/*Si yo ejecuto el archivo Estilo_importadas.html no va a pasar anda porque yo todavia no especifique en donde se va a aplicar.
+Asi queda aplicado para que lo pueda utilizar en cualquiera de los elementos pero lo puedo aplicar de manera mas concreta o explicita:
+puedo decirle que aplique esto solo los elementos span que tengan aplicado la clase subrayado
+
+span.subrayado{text-decoration: underline;}
+
+En este caso solo lo vamos a ver en el caso de los span pero por ejemplo, lo tenia aplicado en otro elemento, no lo veré más subrayado.
+
+lo declaro al selector de tipo class y luego tengo que aplicarlo en los elementos del html que yo quiera colocandoles
+class = "El nombre de la clase"*/
+
+/*Los SELECTORES DE TIPO ID son selectores para estilos personalizados y al igual de los tipos class, el autor es el que define el nombre de los selectores poniendo # seguido del nombre.
+El nombre no debe tener espacios ni caracteres especiales. y luego se aplican en el documento html a los elementos concretamente con el atributo id.
+son muy parecidos al tipo class pero se deben aplicar solamente a un elemento dentro del archivo html.*/
+
+#mayusculas{text-transform: uppercase;}
+
+/*Debo aplicarlo a alguno de los elementos html para que se vea afectado por esas propiedades. Debo aplicarlo SOLAMENTE A UN ELEMENTO EN 
+CONCRETO, como poder se puede pero  no es la funcion de este tipo de selector.
+
+Tambien puedo aplicarlo mas concretamente:
+
+h3#mayusculas{text-transform: uppercase;}*/
+
+/*Los SELECTORES PSEUDOCLASS son unos selectores en donde se les añade una palabra clave a uno de los elementos del html para especificar un estado particular del elemento seleccionado.
+Se utilizan para modificar todos los elementos html con caracteristicas especiales. Los mas conocidos son los que se utilizan para los links por ejemplo.
+
+los liks por defecto vienen de color azul. los exploradores recuerdan cuando frecuentaste una pagina porque aparece de color diferente.*/
+
+/*Los SELECTORES TIPO CLASS:
+    a:link{} aplica unas caracterisiticas a un link que no ha sido visitado
+    a:visited {} aplica unas caracteristicas a un link que SI ha sido visitado
+    a:hover {} aplica unas caracteristicas a un link donde pasa el cursor sobre este
+    a:active {} aplica unas caracterisitcas a un link cuando es cliqueado o presionado
+*/
+a:link{color: aquamarine;} 
+a:visited {color: chartreuse;}
+a:hover{font-weight: bold; text-decoration: none;} /*al pasar el cursor desparaece el subrayado y se pone en negrita*/
+a:active {color: brown;} 
