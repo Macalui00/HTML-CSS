@@ -100,3 +100,18 @@ a:link{color: aquamarine;}
 a:visited {color: chartreuse;}
 a:hover{font-weight: bold; text-decoration: none;} /*al pasar el cursor desparaece el subrayado y se pone en negrita*/
 a:active {color: brown;} 
+
+
+/*LOS SELECTORES DE ATRIBUTO selecciona un elemento utilizando un atributo especifico o utilizando un atributo especifico y el valore del mismo
+
+esas imagenes que hemos agregado, tienen tres atributos:
+--src
+--alt (OBLIGATORIO)
+--title (NO OBLIGATORIO / OPCIONAL)
+a todas las imagenes cuyo atributo sea el title van a tener ciertas caracteristicas:
+*/
+
+img[title]{width: 200px;height: auto;}
+/*esto lo aplica a todas las imagenes, pero si a una le quito el titulo, a esa que le quite el titulo, no se le aplican esas propiedades.*/
+
+img[alt="gato tierno"]{width: 200px;height: auto;} /*Solamente se va a ver afectado el elemento html que presente ese atributo con ese valor.*/
