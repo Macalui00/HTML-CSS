@@ -1,3 +1,48 @@
 @import url(OtrosEstilos.css);
+
 h2{color: darkturquoise;}
 p{color:deeppink;}
+
+/*al igual que en el html, en el css se pueden hacer comentarios*/
+
+
+/*El CSS como pueden ver, trabaja con estilos.
+Los estilos estan compuerstos por un selector y una declaracion.
+Nos vamos a ocupar en este momento de los selectores.
+
+Ejemplo de un estilo
+p {color:red;}
+
+p es el selector
+{color:red;} es la declaración
+
+Vamos a ver la clase de selectores:
+
+-Selector universal --> *
+selector universal se especifica mediante un asterisco
+
+-Tipo ó etiqueta --> p 
+de tipo o de etiqueta donde yo selecciono o defino el elemento de html que quiero modificar.
+
+-Class --> .algo
+
+-Id --> #algo
+
+-Pseudo-Clases --> :link; :visited, :active, :hover
+pseudo-clases a su vez estan divididos en 4.
+
+-De atributo --> [href]
+*/
+
+/*SELECTOR UNIVERSAL -> * */
+
+/*El selector universal, le aplica unas caracteristica a todos los elementos de la html.
+en las propiedades se especifica los elementos que quiero cambiar.
+
+el selector universal consiste de un asterisco seguido de una declaracion.
+
+*{}
+
+*/
+
+*{font-family: Arial;}
