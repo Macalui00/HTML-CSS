@@ -2,7 +2,7 @@
 
 h2{color: darkturquoise;}
 p{color:deeppink;}
-*{font-family: Arial;}
+
 
 
 /*al igual que en el html, en el css se pueden hacer comentarios*/
@@ -46,7 +46,7 @@ el selector universal consiste de un asterisco seguido de una declaracion.
 *{}
 
 */
-
+/* *{font-family: Arial;}  Se comento el selector universal para poder seguir usando el font-family para la clase de fuentes */
 
 /*Los SELECTORES DE TIPO O DE ETIQUETA modifican a los elementos de html de manera cocreta*/
 /*Aquí ya teniamos dos ejemplos donde uno modifica a los elementos h2 y en el otro a los elementos p
@@ -115,3 +115,14 @@ img[title]{width: 200px;height: auto;}
 /*esto lo aplica a todas las imagenes, pero si a una le quito el titulo, a esa que le quite el titulo, no se le aplican esas propiedades.*/
 
 img[alt="gato tierno"]{width: 200px;height: auto;} /*Solamente se va a ver afectado el elemento html o elementos que presenten ese atributo con ese valor.*/
+
+
+/* FUENTE:*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+/*lo que va a hacer este font family es que me va a mostrar la informacion del body en arial pero, le pongo coma y
+ otra fuente porque en caso de que no encuentre ese tipo de letra, que me lo muestre en ese otro tipo de letra y
+ si tampoco la encuentra, que me lo muestre en el otro tipo*/
+
+}
