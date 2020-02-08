@@ -2,6 +2,8 @@
 
 h2{color: darkturquoise;}
 p{color:deeppink;}
+*{font-family: Arial;}
+
 
 /*al igual que en el html, en el css se pueden hacer comentarios*/
 
@@ -45,4 +47,4 @@ el selector universal consiste de un asterisco seguido de una declaracion.
 
 */
 
-*{font-family: Arial;}
+
