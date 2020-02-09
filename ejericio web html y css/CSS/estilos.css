@@ -221,7 +221,52 @@ body{*/
 #cuadro{
     width: 200px; /*Donde yo le indico cual es el ancho que yo quiero para el.*/
     height: 200px; /*indico cual es el alto del elemento*/
+    overflow: ;/*le indica al navegador que hacer si el contenido de un elemento es mayor qeu el propio elemento, es decir, si se desborda.
+                 puedo usar varios valores: uno es scroll. se corta el contenido, y si scrolleo voy a ver el resto del contenido en el cuadro.
+                 esto funciona o se mueve o se visualiza dependiendo del navegador o sistema operativo que yo tenga.
+                 Otro valor es el de hidden, oculta los elementos que esten por fuera de los limites de ese cuadro, pero no me permite ver mas
+                 allá de lo que esta en el recuadro.
+                 Otro valor que tengo es auto, el navegador decide si muestra o no el scroll, incluso decide si muestra el scroll horizontal y/o
+                 el scroll vertical. En la propiedad scroll OBLIGO que se muestre.
+                 tambien esta el valor visible pero es el valor por defecto.*/
     background: lime; /*Yo puedo utilizar todas las propiedades de background.*/
     /*Ahora podemos ver los limites del cuadro y demas, pero podemos ver como el contenido del cuadro excede al cuadro, sale para afuera.*/
+
+   /*border-width: 4px; */ /*Debo trabajar con 3 propiedades minimo. con el border width indico el grosor del elemento.*/
+    /*border-style: solid;*//*puedo utilizar lineas continuas, punteadas, dobles,etc*/
+   /* border-color: maroon; */
+    /*Esto mismo lo puedo utilizar dentro de un shorthand, escribiendo solamente border.*/
+    border: 4px solid red; /*Indico cual es el grosor, el estilo y el color.*/
+    /*Tambien puedo usar que sus valores indepenientes, ejemplo quiero que solo el borde superior tenga sus caracteristicas.*/
+    border-top: 4px solid red; /*styles: 
+                                            dotted ---> linea punteada
+                                            dashed ---> lineas discontinuas
+                                            double ---> doble linea
+                                            groove ---> agregar altibajo relieve, marco
+                                            ridge ---> El brillo y sombreado es en otra direccion pero parecido a groove
+                                            outset
+                                            inset
+                                            solid ---> solido.
+   padding --> padding-bottom, padding-left, etc. Al padding tambien se lo conoce como margen interno */
+   
+   padding-top: 20px; /*Aparece ese margen interno arriba con ese valor que le acabo de especificar.*/
+   padding-bottom: 10px;
+   padding-right: 50px;
+   padding-left: 5px;
+
+   /*Esto mismo tambien lo puedo hacer dentro de un shorthand*/
+
+   padding: 20px 50px 10px 5px; /*Debo empezar por el valor superior, sigo por el valor de la derecha, sigo por el de abajo y termino con el de la izquierda.
+                empiezo por arriba y sigo en orden de las agujas del reloj.*/
     
-}
+   /*Despues tendriamos los valores de margin.
+    margin permite definir el espacio que separa los elementos que esten unos al lado de otros.*/
+
+    margin-top: 40px; /*Si miramos ahora la pagina, el cuadro estaba mas pegado a la parte superior, ahora esta separado por 40px de la parte superior de la pagina*/
+    margin-right: 0px; /*0 porque no hay nada al lado*/
+    margin-bottom: 70px; /*Del borde del objeto al borde del objeto que le siga habra 70 pixeles*/
+    margin-left: 20 px;
+
+    /*lo puedo hacer en un shorhand*/
+    margin: 40px 0px 70px 20px; /*primer valor arriba, segundo valor derecha, tercer valor abajo, y cuarto izquierda*/
+ }
