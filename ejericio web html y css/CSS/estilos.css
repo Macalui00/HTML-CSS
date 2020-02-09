@@ -191,3 +191,37 @@ h2{
                         letter-spacing requiere un valor numerico y una unidad de medida.*/
     word-spacing: 20px; /*Me va a permitir modificar el espacio entre palabras. se expresa en numeros tambien con una iunidad de medida.*/
 }
+
+
+/*FONDO*/
+/*
+body{*/
+
+   /* background-color: peachpuff;*/ /*puedo utilizar el nombre del color, notacion hexagecimal o rgb.*/
+  /*  background-image: url(../imagenes/gato.jpg); */ /*url donde se encuentra la imagen que quiero de fondo.*/
+    /*ahora veremos unas propiedades complementarias al background-image*/
+  /*  background-repeat: no-repeat;*/ /*Tiene varios valors, puedo repetir la imagen, repeat, que es su valor por defecto.
+                                Puedo decirle repeat-x que solo se repita en el eje x.
+                                repeat-y lo mismo en el eje y
+                                no-repeat la imagen aparece de fondo pero no se repite*/
+  /*  background-position: 20% 50% ;*/ /*permite ubicar el fondo en un lugar relativo absoluto, especificamente, en el centro arriba, en el centro abajo,
+                            etc. Utilizando las palabras de valores relativos, o utilizando numeros
+                            valor por defecto left-top.
+                            center right.
+                            center top.
+                            en porcentajes o pixeles. ejemplo a 100px a la izquierda y a 200px del eje y
+                            al 20% en x y a 50% en y.*/
+  /*  background-attachment: fixed;*/ /*Puedo decirle como se va a mover ese fondo. Si yo muevo la barra de scroll, el fondo se mueve con el contenid
+                                de la pagina o se mantiene fijo con el contenido.
+                                scroll, el valor por defecto, el fondo se mueve al unisolo con el contenido de la pagina
+                                fixed, hago que se convierta en un fondo fijo, el fondo permanece quieto y el texto se mueve.*/
+/*}*/
+
+/*CUADRO*/
+#cuadro{
+    width: 200px; /*Donde yo le indico cual es el ancho que yo quiero para el.*/
+    height: 200px; /*indico cual es el alto del elemento*/
+    background: lime; /*Yo puedo utilizar todas las propiedades de background.*/
+    /*Ahora podemos ver los limites del cuadro y demas, pero podemos ver como el contenido del cuadro excede al cuadro, sale para afuera.*/
+    
+}
