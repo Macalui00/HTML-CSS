@@ -150,3 +150,44 @@ body{
     las trabajo en ese orden de ser posible, necesariamente tengo que usar font-size y font-family, el resto pueden faltar*/
     font: italic small-caps bold 25px/200% arial, helvetica, sans-serif; 
 }
+
+
+    /*TEXTO*/
+    /*Propiedades: alineacion, sangria, etc.*/
+
+    p{
+        text-align: justify; /*Me permite utilizar los valores center, inherit, justify, left, right.
+                            En caso de left, alinea el texto a la izquierda. En caso de Right, a la derecha. En el caso de center, en el centro. Justify, forzar la justificacion.
+                            No Suele recomendarse la justificacion en una página web.*/
+        text-indent: 20 px; /*Me permite agregar indentados sangria frqancesa a los textos. Debo agregar valores medidos en lo que ya vimos pixceles, porcentajes, etc.*/
+        text-transform: capitalize; /*Nos permite transformar nuestro texto de lo que es a otro estado. pasar de minuscula a mayuscula, o viceversa, convertir las primeras letras en mayuscula, entre otras cosas.
+                                    Uppercase: pasar todas las letras a mayuscula.
+                                    Lowercase: pasar todas las letras a minuscula.
+                                    capitalize me permite ver todas las primeras letras de las palabvras en mayusculas.*/
+        text-decoration: line-through; /*voy a permitir hacer es agregarle una linea de alguna forma, agregar un subrayado, quitarlo, tachar las palabras, etc.
+                                    Underline: Todos los textos subrayados
+                                    overline: poner una linea en la parte superior de la letra.
+                                    LINE-THROUGH: te tacha la letra.
+                                    none: que me quite los subrayados, ejemplo, en los links.
+                                    */
+      }
+
+    a{
+        text-decoration: none;
+    }
+    
+/*vertical-align: *Me permite alinear un texto, con respecto a otro elemento, siempre y cuando no sea un bloque, por ejemplo, la imagen.*/
+
+img{
+    
+    vertical-align: middle; /*Top, baseline, middle,  botttom, sub, sup
+                            con middle, por ejemplo, la imagen queda alineada a la mitad, con la primera linea de texto. sino quedaria en el bottom, en la base de la imagen la primera linea del texto.*/
+
+} 
+
+h2{
+
+    letter-spacing: 5px; /*Me permite modificar el esapcio entre las letras, tamnbien conocido como kerning en el area de diseño.
+                        letter-spacing requiere un valor numerico y una unidad de medida.*/
+    word-spacing: 20px; /*Me va a permitir modificar el espacio entre palabras. se expresa en numeros tambien con una iunidad de medida.*/
+}
