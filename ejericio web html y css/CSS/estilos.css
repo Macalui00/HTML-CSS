@@ -221,7 +221,7 @@ body{*/
 #cuadro{
     width: 200px; /*Donde yo le indico cual es el ancho que yo quiero para el.*/
     height: 200px; /*indico cual es el alto del elemento*/
-    overflow: ;/*le indica al navegador que hacer si el contenido de un elemento es mayor qeu el propio elemento, es decir, si se desborda.
+    overflow: scroll;/*le indica al navegador que hacer si el contenido de un elemento es mayor qeu el propio elemento, es decir, si se desborda.
                  puedo usar varios valores: uno es scroll. se corta el contenido, y si scrolleo voy a ver el resto del contenido en el cuadro.
                  esto funciona o se mueve o se visualiza dependiendo del navegador o sistema operativo que yo tenga.
                  Otro valor es el de hidden, oculta los elementos que esten por fuera de los limites de ese cuadro, pero no me permite ver mas
