@@ -1,0 +1,36 @@
+div{
+    width: 200px;
+    height: 200px;
+    background: #CCC;
+    display: inline-block;
+    /*los elementos de bloque o los elementos que tienen un display block, ocupan el area en la que se encuentran. pocupan el ancho del navegador completo.
+    se llaman asi porque no pueden estar uno al lado del otro, siempre van a estar uno debajo del otro.
+    la propiedad inline hace que ese elemento de bloque actue como un elemento de linea, por ejemplo un texto.
+    se llama elemento en linea porque puede estar uno al lado del otro.
+    
+    con el inline haces que los elementos de bloque se vuelvan elementos de linea.
+    y las propiedades de bloque que tenian esos elementos se perdieron como pueden ser:
+    el margen, en algunos casos el padding, el width y el high
+
+    inline-block: hace que un elemento de nivel de bloque fluya como un elemento en linea. mientras que se
+    se mantienen otras caracteristicas de un elemento a nivel de bloque.
+
+    */
+}
+
+/* los elementos span son elemento a nivel de linea, pero podemos decirle que se comporte a nivel de bloque.*/
+
+span{
+    color: red;
+    font-weight: bold;
+    display: block;
+    /*ahora si puedo asignarle un ancho y un alto cuando en realidad era un elemento en linea, como ya lo converti
+    o le dije que se comporte como elemento en bloque*/
+}
+
+#dos{
+    
+    /*display: none;*/ /*El elemento se desaparece. Aparece la pagina como si no existiera ese elemento*/
+    visibility: hidden; /*Ocurre lo mismo pero es diferente, el elemento se vuelve 
+                         INVISIBLE PERO SIGUE OCUPANDO EL ESPACIO que tenia en el codigo.*/
+}

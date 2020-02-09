@@ -1,0 +1,25 @@
+ul{
+    font-size: 22px;
+    line-height: 150%; /*para que no se vean tan amontonadas*/
+    padding: 0; /*Las listas por defecto tienen un padding a los lados. en 0, la lista ya no tiene ese relleno*/
+    border: 1px solid red;
+   /*list-style-type: square;*/ /*Me permite cambiar la viñeta de esa lista.
+                             nosotros inicialmente tenemos una lista sin ordenar
+                             square me permite ver un cuadro
+                             circle en caso de que quiera ver las viñetas predeterminadas
+                             puedo hacer que la lista se convierta en una lista ordenada:
+                             decimal --> las ordeno en numeracion decimal
+                             lower-alpha --> me mostrará letras minúsculas
+                             none hace que no vea la viñeta*/
+
+    /*La otra propiedad que puedo usar es list-style-image, pero no tengo que tener activada la propiedad anterior.*/
+   /*
+    list-style-image: url(../imagenes/vineta.png) ; *//*Me permite utilizar la viñeta que se suele utilizar por una viñeta que yo haya preparado.*/
+   /* list-style-position: inside;*/ /*Dos posibles valores, que la viñeta este:
+                            outside: como sucede por defecto. deja la viñeta fuera de la lista.
+                            inside: la viñeta aprece dentro de la lista misma*/
+   
+    /*Tambien puedo utilizar un shorthand*/
+    list-style: url(../imagenes/vineta.png) inside;/*Aca puedo decir el tipo de viñeta, o la imagen que quiera utilizar, o la posicion de esa viñeta*/
+
+}
