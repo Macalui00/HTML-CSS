@@ -55,4 +55,8 @@ posicion estatica permanece ahí.*/
     padding: 50px;
     background: rgba(220,20,128,0.5);
     font-size: 2em;
+    position: fixed;
+    /*hace que el flujo de los elemento de html se pierde. por mas que uno scrollee los elementos se mueven pero ese elemento fixed permanece ahi.*/
+    top: 50px;/*Ya no depende del elemento padre.*/
+    right: 50px;
 }
