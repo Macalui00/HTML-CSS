@@ -1,0 +1,58 @@
+/*POSITION*/
+/*Tipos de posicion:
+    static
+    relative
+    absolute
+    fixed
+
+*/
+
+/*
+Todos los elementos del HTML tienen por defecto asignada la posicion "Static", es decir,
+que los elementos se respetan segun el orden en el cual han sido creados en el HTML.
+*/
+
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 800px;
+
+}
+
+#padre{
+
+    width: 700px;
+    height: 500px;
+    border: 4px solid #0CC;
+    margin: 20px auto;
+    padding: 20px;
+    position: relative;
+
+}
+
+#hijo{
+
+    text-align: center;
+    padding: 50px;
+    background: rgba(128,128,128,0.5); /*Seke agrega un canal alfa, que es el 0.5 que varia entre 0 y 1 y me permite el nivel de transparencia del color*/
+    font-size: 2em;
+    /*position: relative;*/ /*No pasa nada, porque, la posicion relativa si no le indico absolutamente nada, no va a pasar nada,
+    se muestra todo como estaba. pero aparecen otras propiedades a los tipos de posiciones.*/
+    /*Puedo agregar las coordenadas, top, bottom, right y left*/
+    position: absolute; /*Queda en otro lado el elemento, e incluso pierde el ancho que antes tenia. en position absoluta, los elementos pierden el flujo que tenian anteriormente*/
+    top: 50px;
+    left: 100px;
+}
+
+/*Los demas elementos que tienen posicion estatica, mantienen su lugar,
+mientras que el elemento que tiene posicion relativa, donde su posicion relativa es,
+el punto (0,0), se mueve hacia yo le indico. Y el lugar que antes ocupaba en 
+posicion estatica permanece ahí.*/
+/*La posicion absoluta me sirve para ubicar un objeto especifico dependiendo del padre. y el ancho del flujo se pierde. El ancho, lo va a definir el padding y ...*/
+
+#fija{
+    text-align: center;
+    padding: 50px;
+    background: rgba(220,20,128,0.5);
+    font-size: 2em;
+}

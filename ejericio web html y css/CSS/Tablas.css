@@ -1,0 +1,18 @@
+table{ /*Estilos para la tabla*/
+    width: 500px; 
+    height: 500px;
+    empty-cells: hide; /*hide o show, mostrar o no las celdas vacias.*/
+    /*border-spacing: 30px;*/ /*El valor que separa las celdas de una tabla.
+                                Si especifico un solo valor voy a decir que todos
+                                los espacios de esas celdas sean iguales. o puedo
+                                manejar primero los espacios horizonales y luego los verticales*/
+    border-spacing: 15px 30px;
+    border-collapse: collapse;/*me permite indicarle a los bordes de las tablas que esten unidos entre si
+                        y a los bordes mismos a los bordes de la tabla. separate: valor por defecto.
+                        collapse: pegados esos bordes a la tabla misma*/
+}
+td{ /*Estilos para la celda*/
+    border: 1px solid #08d;
+    text-align: center;
+    font-size: 28px;
+}
