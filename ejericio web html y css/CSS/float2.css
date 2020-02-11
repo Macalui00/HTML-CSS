@@ -1,0 +1,47 @@
+/*Float vs display: en su valor Inline-block
+
+Este debate se debe a que hay personas que sostienen que no se debe utilizar la propiedad float
+para poner los elementos uno al lado del otro, que solo se debe usar la propiedad display inline-block o inline
+Mientras que eso no es absolutamente cierto, se debe usar una en funcion y de acuerdo a lo que se necesite.
+
+*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Article: es un articulo simple, nos va a servir como una caja, es un elemento de HTML5*/
+
+#principal{
+    width: 800px;
+    padding: 20px;
+    border: 2px dashed #3498DB;
+    margin: 20px auto;
+    color: #888888;
+}
+
+div{
+    padding: 40px 0; /*padding de 40px arriba y abajo y 0 a los lados.*/
+    text-align: center;
+    width: 25%; /*Deberian ocupar toda la extension del contenedor.*/
+    /*float: left;*/
+    display: inline-block; /*Me permite ubicar los elementos uno al lado de los otros conservando algunas propiedades de los elementos, como por ejemplo del ancho.
+    se ubican uno al lado del otro pero queda uno abajo. Lo que sucede es que al ser inline-block se comporta como texto, razon por la cual entre elementos va a 
+    haber espacios. Aca la solucion puede ser, ejemplo: menos ancho.
+    lo que puedo hacer es agregar un script que va a complicar mas las cosas O LO QUE SE PUEDE HACER ES QUITAR LOS ESPACIOS ENTRE LOS DIVS que hay en el archivo HTM.
+    esto se debe a que se comportan como texto.*/
+}
+
+#div1{
+    background: red;
+}
+#div2{
+    background: blue;
+}
+#div3{
+    background: yellow;
+}
+#div4{
+    background: green;
+}
+
+p{ clear: both;} /*Limpiar ese float para que el parrafo no se meta en el flujo de divs que tenia(cuando les pongo un ancho mayor, ejemplo de 27%.).*/

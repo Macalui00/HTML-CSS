@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    position: absolute; /*Sin la posicion absoluta, los elementos quedan uno debajo del otro.
+                        Con la posicion absoluta, los elementos quedan superpuestos, uno encima del otro.*/
+}
+
+#div1{
+    background: #FC0;
+    top: 0; /*Si les agrego una coordenadas voy a poder ver que estan uno debajo del otro o superpuestos*/
+    left: 0;
+    z-index: 2;
+}
+
+#div2{
+    background: #0FC;
+    top:50px;
+    left: 50px;
+    z-index: 1;
+}
+
+#div3{
+    background: #AE0;
+    top: 100px;
+    left: 100px;
+    z-index: 0;
+}
+
+/*Como estan superpuestos, para eso, si es que yo quiero cambiar el orden, puedo utilizar la propiedad z-index. La cual funciona:
+tengo tres ejes: x, y y z. Es por esto que se llama z-index, para que le indique cual es el valor, el orden en el cual van a estar agrupados esos elementos.
+Todos los elementos tienen por defecto un z-index 0, y como todos tienen por defecto 0, se respeta la forma en la que estan creados dentro del html.
+para que esto funcione correctamente, los elementos que estan involucrados en el orden, tienen que tener el mismo tipo de posicion, bien sea relative, absolute o fixed.
+composicion estatica no es posible hacer
+
+Cuando yo le cambie el valor z-index 0 a otro, esos elementos van a comenzar a moverse hacia adelante o hacia atras, si es necesario.
+numeros superiores a otros, van a verse mas adelante que otros.
+
+Yo debo usar valores positivos Y TAMBIEN SE PUEDEN USAR VALORES NEGATIVOS. Lo que pasa es que no esm muy coherente usar valores negativos ya que el mismo body va a 
+ser el tope hacia atras.
+
+Tambien es aconsejable no trabajar en numeros enteros suscesivos, se recomienda que se utilice en uno 10 en otro 20 y en otro 30. de manera tal, que cuando yo requiera
+valores intermedios yo los pueda poner.
+hay gente que los maneja en posiciones de a 100 o de a 1000.*/
