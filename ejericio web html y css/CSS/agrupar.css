@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* QUE PASA SI YO QUIERO QUE H2 Y H3 TENGAN EL MISMO COLOR?
+
+Lo normal seria ponerlos por separado y asignarle el color. Lo que pasa
+es que puedo ponerlo todo en una misma linea de codigo, para eso se 
+agrupa los selectores: Se definen uno al lado del otro, separados por una coma
+h1{
+    color: red;
+}
+
+h2{
+  color: red;
+}
+    
+h3{
+    color: red;
+}
+*/
+
+h1, h2, h3 {
+    color: red;
+    text-decoration: underline;
+}
+
