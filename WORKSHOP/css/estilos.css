@@ -1,0 +1,58 @@
+/*Vamos a darle un pequeño formato al documento. Padding y margen*/
+*{ margin: 0; padding: 0;}
+
+body{background: url(../img/fondo.jpg) no-repeat top center;
+                /*Como quiero una imagen que esta fuera de la carpeta css, escribo:
+                ../img/nombredelarchivo.jpg*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor { width: 960px; margin: 0 auto; /*border: 1px solid;*/ } /*El border me servia para marcarme dentro del navegador los limites. una vez que arme todo, ya no me sirve, asi que lo borro.*/
+
+/*960px porque es el formato estandar que utilizaria
+en cualquier pantalla de escritorio.*/
+
+/*margin arriba y abajo 0 y en los lados auto, va a quedar centrado*/
+
+
+
+#cabecera {position: relative; padding-top: 20px;}
+
+#logo{ width: 21%; float: left; color: #FFF; font-size: 34px; background: 
+    url(../img/nube.png) no-repeat left center; padding-left: 4%;} /*padding para que el texto logo quede al costado del logo.
+    el menu se bajo porque entre el 25% mas el 4% del padding y sumado al 75% del menu, se pasa del 100%.
+    Por esto bajo el width a 21%*/
+
+#menu {width: 75%;float: right; text-align: right; padding-top: 15px;}
+#menu ul {list-style-type: none;} /*Eliminamos las viñetas de la lista*/
+#menu ul li {display: inline-block;} /*Vamos a agregarle un estilo a cada elemento de la lista para que este cada uno, uno al lado del otro.*/
+#menu ul li a { color: #FFF; text-decoration: none; padding: 5px 20px; font-size: 14px;} /*el font size actual, el de default era de 16, asi que lo achicamos a 14.*/
+#menu ul li a:hover, #menu ul li a#activo:hover {border-bottom: 2px solid #FFF;} /*para que al pasar el cursor por alguno de los elementos menu se resalte.*/
+#menu ul li a#activo {border-bottom: 1px solid #FFF;} /*Para que señale o resalte en que pagina del menu estamos actualmente*/
+
+#mensaje { clear: both; height: 340px; position: relative; text-align: center; color: #FFF;
+            background: url(../img/nube-mensaje.png) no-repeat center /*90 px*/; } /* clear: que limpie el flujo que tenia anteriormente al rededor.*/
+
+#mensaje h2{position: relative; font-size: 32px; text-transform: uppercase; font-weight: normal;
+top: 160px;}
+
+#mensaje p{position: relative; font-size: 18px; top: 170px; letter-spacing: 4px;}
+
+#mensaje a {position: relative;color: #FFF; text-decoration: none; top: 210px;
+     border: 2px solid #FFF; padding: 10px 30px; font-size: 14px;}
+#principal, #footer {padding: 20px 0;}
+#principal img {width: 50%;float: right; margin-left: 20px;} /*Que tenga un ancho del 50% del PRINCIPAL. padding-left para que se separe un poco del texto.*/
+#principal h1 {color: #F60; background: url(../img/nube-naranja.png) no-repeat left center;
+     padding-left: 30px; margin-bottom: 15px;}
+#principal p {font-size: 12px; color: #555; letter-spacing: 1px; line-height: 1.9;}
+#principal hr { border: none; border-top: 1px solid #CCC; margin: 25px 0;}
+#principal iframe { width: 100%; height: 250px;} /*IFRAME: mostrarle otra ventana dentro de una ventana, un documento dentro de otro.*/
+
+#footer{background: #CCC; text-align: center; position: relative;}
+#footer p{ color: #555; font-size: 12px;}
+#footer img{ position: absolute; right: 5px; top: 50%; margin-top: -8px;}
+
+#redes{ position: fixed; right: 0; top: 400px; width: 36px;} /*Posicion fixed, fija.*/
+
+/*Vamos a agregarle un favicon a nuestro documento html. son los iconos que aparecen en las pestañas de una pagina, o tambien es el icono que aparece cuando tenemos la pagina en favoritos.
+Ejemplo de pagina donde se pueden conseguir: favicon.cc*/

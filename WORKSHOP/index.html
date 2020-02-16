@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+    El doctype le indica al navegador con que estandar esta escrito el codigo html. El caso de usar stricto o
+    transicional. Dpendiendo de la version HTML. Hay algunas etiquetas del HTML anterior o de versiones anteriores estan en 
+    desuso desaprobadas. Por lo cual, ejemplo, en el estricto no me dejaria usar etiquetas que estan desaprobadas. En el caso
+    del transicional si.
+
+    SIEMPRRE DEBO AGREGARLO EN LA PRIMERA LINEA.
+
+    pagina para revisar que DOCTYPE usar: https://www.w3.org/QA/2002/04/valid-dtd-list.html
+
+    Ahora vamos a ir a una pagina que nos va a permitir validar nuestro codigo, ver si esta correcto.
+    https://validator.w3.org/
+    una vez que se valido correctamente te aparecera un cartel verde de flicitacion y tambien podes copiar un texto que indica que la pagina ha sido validada
+
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer"> <img
+      src = "http://www.w3.org/Icons/valid-html401" alt = "Valid HTML 4.01 Transitional" height = "31" width = "88"> </a>
+  </p>
+    
+  Tambien la W3C nos permite validar el CSS:
+  http://jigsaw.w3.org/css-validator/
+
+  Lo mismo hara con el CSS, te lo validara y te permitira copiar unos iconos que verifican que fueron validados.
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="¡CSS Válido!" />
+    </a>
+</p>
+-->
+
+<html>
+    <head>
+
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="description" content="Curso de HTML y CSS el lenguaje de programacion y desarrollo de paginas web">
+        <meta name="keywords" content="HTML, CSS, Curso HTML, Curso CSS, Curso diseño de páginas web, curso páginas web,
+         Buenos Aires, Argentina">
+        <meta name="author" content="Macarena Lui">
+        <meta name="robots" content="index, follow">
+        <meta name="googlebot" content="index, follow">
+
+        <title>Curso HTMl y CSS</title>
+        <link rel="stylesheet" type="text/class" href="css/estilos.css">
+        <link rel="stylesheet" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <div id="redes">
+            <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+        </div>
+        <div id="contenedor">
+            <div id="cabecera">
+                <div id="logo"> Logo </div>
+                <div id="menu"> 
+                    <!--barra de navegacion: Se recomienta tener una lista sin ordenar
+                    y cada elemento sea un link, un elemento a.-->
+                    
+                    <ul>
+                        
+                        <!--Link local. Porque estoy linkeando a un documento que esta en la misma carpeta en la que me encuentro.-->
+                        <li><a href="index.html" id="activo">HOME</a></li>
+                        <li><a href="#">Temario</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Galería</a></li>
+                        <li><a href="#">Contáctenos</a></li>
+
+                    </ul>
+
+                </div>
+                <div id="mensaje">
+
+                    <h2>Bienvenido al curso de HTML Y CSS</h2>
+                    <p> Lorem Ipsum ha sido el texto ficticio estándar de la industria
+                        desde el año 1500, cuando una impresora desconocida tomó una 
+                        galera de tipo y la mezcló para hacer un libro de muestras. 
+                    </p>
+                    <!--Link anclado. es el que yo doy click y voy aun lugar dentro del mismo documento.-->
+                    <a href="#principal">Leer más</a>
+
+                </div>
+            </div>
+            <div id="principal">
+                <img src="img/laptop.jpg" alt="Curso HTML y CSS">
+                <h1>Curso de HTML y CSS</h1>
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y
+                    archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar
+                    de las industrias desde el año 1500, cuando un impresor (N. del T. 
+                    persona que se dedica a la imprenta) desconocido usó una galería de
+                    textos y los mezcló de tal manera que logró hacer un libro de textos
+                    especimen.
+                </p>
+                <hr> <!--Linea horizontal que me divide un tema del otro.-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13132.299238935902!2d-58.451558399999996!3d-34.62754975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1581867008126!5m2!1ses!2sar" width="800" height="600" frameborder="0" style="border:0;"></iframe>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Copyright &copy; 2020 Macarena Lui - Todos los derechos reservados.</p>
+            <a href="#contenedor"><img src="img/arriba.png" alt="Volver arriba"></a>
+        </div>
+    </body>
+</html>
