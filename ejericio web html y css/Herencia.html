@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Herencia de Selecrores CSS</title>
+        <link rel="stylesheet" type="text/css" href="css/herencia.css">
+        <!--Herencia de selectores - Anidar selectores
+        Para poder manipular mejor los elementos, y reducir el numero
+        de estilos clase id, existe la herencia de selectores en CSS.
+        hay selectores padre, hijos o hermano adyacente y hermano general-->
+    </head>
+    <body>
+
+        <diV> <!--Este elemento DIV tiene 3 elementos parrafos hijos, 
+                porque estan por dentro de él-->
+            <P>Párrafo 1 dentro del div.</P>
+            <P>Párrafo 2 dentro del div.</P>
+            <span><P>Párrafo 3 dentro del div.</P></span>
+        </diV>
+
+        <!--Estos dos parrafos no son hijos de DIV por no estar por
+        dentro de él. Estos parrafos son hijos de BODY-->
+        <P>Párrafo 4 fuera del div.</P>
+        <P>Párrafo 5 fuera del div.</P>
+
+    </body>
+</html>

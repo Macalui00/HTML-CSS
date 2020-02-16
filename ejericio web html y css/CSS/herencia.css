@@ -1,0 +1,55 @@
+body{font-family: Arial, Helvetica, sans-serif;}
+
+/*SELECTOR PADRE: ME INDICA QUE VA A MODIFICAR A TODOS LOS ELEMENTOS HIJOS
+QUE ESTEN DENTRO DE ÉL.*/
+
+/*Voy a decir que todos los divs que contengan un elemento p, van a tener:*/
+div p {
+    background: #FF0;
+}
+
+/*
+Aca se especifica primero el elemento padre, 1 espacio, el elemento hijo.
+Aca es solo un nivel, pero, puedo tener multiples niveles. Y despues las propiedades
+*/
+
+/*SELECTOR HIJO: MODIFICA A TODOS LOS ELEMENTOS QUE SON HIJOS INMEDIATOS
+DE UN ELEMENTO ESPECIFICO.*/
+
+
+/*
+Aca en vez de un espacio, lo especifico, con un mayor que.
+Aca lo que estoy diciendo es que: Hay que modificar todos los elementos p
+que son hijos directos del elemento div.
+
+La diferencia es que ahora solo selecciona los dos primeros parrafos.
+El tercero no es un hijo directo por estar dentro de un elemento span.
+*/
+
+div > p {
+    background: #FF0;
+}
+
+/*SELECTOR ADYACENTE GENERAL: MODIFICA A TODOS LOS ELEMENTOS QUE ESTEN DESPUES
+DE UN ELEMENTO ESPECIFICAMENTE.*/
+
+/*Acá utilizo el simbolo: ~ (ALT + 126). Y lo que digo es que:
+todos los elementos parrafos que esten despues de un elemento div,
+van a atener el color de fondo amarrilo.
+
+Se modifican los elementos que estan fuerta del elemento div. Son los que 
+cumplen con la condicion.*/
+
+div ~ p {
+    background: #FF0;
+}
+
+/*SELECTOR ADYACENTE INMEDIATO: MODIFICA EL ELEMENTO QUE ESTE INMEDIATAMENTE
+DESPUES DE UN ELEMENTO ESPECIFICO.*/
+
+/*Acá todo lo que tengo que hacer es poner un +. y modificará, el primero de
+los elementos p despues de un elemento div.*/
+
+div + p {
+    background: #FF0;
+}
